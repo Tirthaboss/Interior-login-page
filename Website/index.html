@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Furniture Design Login</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script> <!-- Replace 'your_kit_id' -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-card">
+      <div class="left-section">
+        <h1 class="brand">LUXORA</h1>
+        <h2>Login</h2>
+        <p class="subtitle">Choose from 10,000+ products across 400+ categories</p>
+
+        <button class="google-btn" onclick="googleAuth()">
+          <i class="fab fa-google"></i> Sign in with Google
+        </button>
+
+        <div class="divider">
+          <span>or</span>
+        </div>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+          </div>
+
+          <div class="input-group password-group">
+            <label for="password">Password</label>
+            <div class="password-field">
+              <input type="password" id="password" required placeholder="Enter your password">
+              <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+            </div>
+          </div>
+
+          <div class="options">
+            <label><input type="checkbox" id="rememberMe"> Remember Me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+
+      </div>
+
+      <div class="right-section">
+        <img src="https://images.unsplash.com/photo-1582582494700-943cb0ef5d49" alt="Chair Image">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+            
